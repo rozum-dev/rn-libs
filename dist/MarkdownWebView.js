@@ -94,6 +94,7 @@ class MarkdownWebView extends React.Component {
 
         result = this.addBedside(result);
         result = this.addBodyStyles(result);
+        result = result.replace(/###/g, "");
             
         return (
             <WebView
