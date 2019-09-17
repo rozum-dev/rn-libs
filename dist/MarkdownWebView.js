@@ -46,7 +46,9 @@ class MarkdownWebView extends React.Component {
                     `l[${mySubString}]l`,
                     `
                         <div style="width: 100%;">
-                            <img style="width:100%; height:300px;" src="https:${stringData[0]}" />
+                            <div style="width:100%; max-height:300px; overflow:hidden;"> 
+                                <img style="width:100%; height:auto; " src="https:${stringData[0]}" />
+                            </div>
                             <p style="color:#9d9d9d; font-size: 14px; text-align: center; margin-top: 10px;">${stringData[1]}</p>
                             <p
                                 style="color:#333333; font-size: 18px; text-align: center; font-weight: 500; line-height:18px; margin-top: -10px; margin-left:15%; margin-right:15%;"
